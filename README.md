@@ -1,19 +1,20 @@
 # TextSimplifier
-A Java application that simplifies text by replacing complex words with simpler alternatives based on GloVe word embeddings.
-This is a Java-based text simplification application developed for a project focused on natural language processing and user-friendly content delivery. The application takes in a text file, replaces complex words with simpler synonyms, and outputs a more readable version of the text.
+A Java-based **Text Simplifier** that processes a user-provided text file and replaces its words with synonyms from the **Google list of 1,000 most common English words**.
+This is a text simplification application developed for a project focused on natural language processing and user-friendly content delivery. The application takes in a text file, replaces words with synonyms, and outputs a simplified version of the text.
 
 ## 📚 Project Overview
 
-The goal of this project is to simplify written English by replacing less common words with synonyms drawn from the [Google-1000 most common words](https://github.com/first20hours/google-10000-english). Word similarity is computed using **GloVe word embeddings**.
+The goal of this project is to simplify text with embeddings and swap words with synonyms drawn from the [Google-1000 most common words](https://github.com/first20hours/google-10000-english). Word similarity is computed using **GloVe word embeddings**.
 
 ---
 
-## 🚀 Features
+## 🚀 Features/How It Works
 
-- Reads a plain text file
-- Analyzes and identifies uncommon words
-- Replaces words with semantically similar and more common synonyms
+- The application reads and processes the text content.
+- It attempts to **replace each word** in the text with a **simpler synonym** based on the 1,000 most common English words.
 - Outputs the simplified text to a new file
+
+  This application combines **file I/O**, **string manipulation**, and **word similarity matching** to produce a version of the original text that is (potentially) easier to understand.
 
 ---
 
@@ -46,7 +47,7 @@ java -cp out Runner
   ## 💻 Technologies Used
 - **Java** – Core language used for building the application logic
 - **GloVe Word Embeddings** – Used for finding semantically similar words
-- **Google-1000 Word List** – Reference for identifying common/simple words
+- **Google-1000 Word List** – Reference for identifying common words
 - **File I/O (Java)** – Reading and writing plain text files
 - **Collections Framework** – For managing and processing word data
 - **String Manipulation** – Parsing and simplifying text content
